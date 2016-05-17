@@ -1,4 +1,4 @@
-# Jordan Tribute Page
+# Jordan and Scotty
 
 This is a single webpage style tribute to Michael Jordan. Just practicing some stuff here.
 
@@ -16,7 +16,7 @@ This is a single webpage style tribute to Michael Jordan. Just practicing some s
 	- `git add .` then
 	- `git status` then  
 	- `git commit -m 'Initial commit'`
-	- `git status` then 
+	- `git status` then
 3. Then go to GitHub and create a repo called `jordan-tribute`
 4. Follow the instructions from GitHub to "push and existing git repo"
 5. Create a new branch called mike `gcob mike`

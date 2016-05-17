@@ -1,4 +1,4 @@
-// 'use strict'; 
+// 'use strict';
 
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
@@ -12,15 +12,15 @@ const defaultBrowser = 'google chrome canary'
 
 browserSync.create();
 // Static Server + watching scss/html files
-gulp.task('serve', ['stylus', 'jade'], function() {
-
+//gulp.task('serve', ['stylus', 'jade'], function() {
+gulp.task('serve', ['stylus'], function() {
   browserSync.init({
     server: "./",
     browser: defaultBrowser
   });
 
   gulp.watch("*.styl", ['stylus']);
-  gulp.watch("*.jade", ['jade']);
+  //gulp.watch("*.jade", ['jade']);
   gulp.watch("*.html").on('change', browserSync.reload);
 });
 
@@ -40,7 +40,7 @@ gulp.task('jade', function() {
   	title: "Michael Jordan Tribute",
   	para: "One of the best to ever play the game"
   };
- 
+
   gulp.src('./*.jade')
     .pipe(jade({
       locals: YOUR_LOCALS,
