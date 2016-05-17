@@ -3,9 +3,9 @@
 This is a single webpage style tribute to Michael Jordan. Just practicing some stuff here.
 
 ## Todo
-- [] Practice building this in HTML as fast as I can
-- [] Practice building this in Markdown as fast as I can
-- [] Practice building this in Jade as fast as I can
+- [ ] Practice building this in HTML as fast as I can
+- [ ] Practice building this in Markdown as fast as I can
+- [ ] Practice building this in Jade as fast as I can
 
 
 ## Setting up the project

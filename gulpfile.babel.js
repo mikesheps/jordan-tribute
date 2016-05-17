@@ -12,7 +12,8 @@ const defaultBrowser = 'google chrome canary'
 
 browserSync.create();
 // Static Server + watching scss/html files
-gulp.task('serve', ['stylus', 'jade'], function() {
+// gulp.task('serve', ['stylus', 'jade'], function() {
+gulp.task('serve', ['stylus'], function() {
 
   browserSync.init({
     server: "./",
@@ -20,7 +21,7 @@ gulp.task('serve', ['stylus', 'jade'], function() {
   });
 
   gulp.watch("*.styl", ['stylus']);
-  gulp.watch("*.jade", ['jade']);
+  //gulp.watch("*.jade", ['jade']);
   gulp.watch("*.html").on('change', browserSync.reload);
 });
 
