@@ -1,4 +1,4 @@
-# Jordan is the man
+# Jordan tribute page
 
 This is a single webpage style tribute to Michael Jordan. Just practicing some stuff here.
 
