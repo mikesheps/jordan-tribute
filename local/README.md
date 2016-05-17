@@ -1,4 +1,4 @@
-# Jordan all in your face
+# Jordan and Scotty
 
 This is a single webpage style tribute to Michael Jordan. Just practicing some stuff here.
 
