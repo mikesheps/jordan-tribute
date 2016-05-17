@@ -1,4 +1,4 @@
-# Jordan junk in face
+# Jordan all in your face
 
 This is a single webpage style tribute to Michael Jordan. Just practicing some stuff here.
 
