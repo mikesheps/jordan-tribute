@@ -1,4 +1,4 @@
-// 'use strict';
+// 'use strict'; 
 
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
@@ -40,7 +40,7 @@ gulp.task('jade', function() {
   	title: "Michael Jordan Tribute",
   	para: "One of the best to ever play the game"
   };
-
+ 
   gulp.src('./*.jade')
     .pipe(jade({
       locals: YOUR_LOCALS,
