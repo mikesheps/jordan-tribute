@@ -1,5 +1,9 @@
 @import 'normalize'
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
   font-size: 20px;
 }
@@ -127,33 +131,99 @@ img {
 }
 
 .origins__heading {
-
+  font-family: Impact;
+  font-size: 2.6rem;
 
 }
 
 .origins__columns {
   display: flex;
-
+  padding-bottom: 40px;
 
 }
 
 .origins__media {
+  flex: 1;
+}
 
+.origins__media  img {
+  border: 1rem solid #e6e6e6;
+  object-fit: cover;
+  height: 100%;
 }
 
 
 .origins__textbox {
-  
+  padding: 0 2rem 1rem 2rem;
+  flex: 1;
+}
+
+.origins__button {
+  display: block;
+  background-color: red;
+  color: white;
+  width: 150px;
+  text-align: center;
+  padding: 8px 8px 8px 8px;
+
+}
+
+.origins__button:hover {
+  background-color: black;
+  color: red;
 }
 
 
+.earlycareer__layer {
+  background-image: url(img/free-throw-line-dunk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+
+}
+
+.earlycareer__container {
+  width: 960px;
+  padding-top: 50px;
+  padding-left: 75px;
+
+}
+
+.earlycareer__heading {
+  font-family: Impact;
+  font-size: 2.6rem;
+  color: white;
 
 
+}
 
+.earlycareer__column {
+  display: flex;
 
+}
 
+.earlycareer__textbox {
+  width: 50%;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  font-family: roboto slab;
+}
 
+.earlycareer__button {
+  display: block;
+  background-color: red;
+  color: white;
+  width: 150px;
+  text-align: center;
+  padding: 8px 8px 8px 8px;
 
+}
+
+.earlycareer__button:hover {
+  background-color: black;
+  color: red;
+
+}
 
 
 
