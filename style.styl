@@ -1,12 +1,37 @@
 @import 'normalize'
 
+// debug()
+//   border 1px solid magenta
+
+//colors
+// blackout = #000
+// bullsred = #f00
+// fog = #e6e6e6
+
+
+//font
+// slab = 'roboto slab'
+// condensed = 'roboto condensed'
+// heavy = 'impact'
+
+
+// Default styles
 * {
+    //border: 1px solid magenta;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
   font-size: 20px;
 }
+
+body {
+  font-family: roboto slab;
+  line-height: 1.5;
+}
+
 
 //Resets
 a {
@@ -21,6 +46,56 @@ ul, ol {
 img {
   max-width: 100%
 }
+
+p {
+  margin-bottom: 1rem;
+}
+
+// Pattern selectors
+[class*='--bg']{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+[class*='__container'] {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+[class*='__heading'] {
+  font-family: Impact;
+  font-size: 2.6rem;
+  padding: 2rem 0;
+}
+
+
+[class*='__columns'] {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+[class*='__textbox'] {
+  flex: 1;
+  padding: 2rem;
+}
+
+[class*='__button'] {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 8px;
+}
+
+[class*='__button']:hover {
+  background-color: black;
+  color: red;
+}
+
+
+// Theme styles
 
 .header {
     background-color:  red;
@@ -117,9 +192,6 @@ img {
    font-size: 2.5rem;
    padding: 12px 0;
    line-height: 3.5rem;
-
-
-
 }
 
 .origins__layer {
@@ -128,65 +200,31 @@ img {
 
 .origins__container {
   width: 960px;
+  margin: 0 auto;
 }
 
-.origins__heading {
-  font-family: Impact;
-  font-size: 2.6rem;
 
-}
-
-.origins__columns {
-  display: flex;
-  padding-bottom: 40px;
-
-}
 
 .origins__media {
   flex: 1;
 }
 
-.origins__media  img {
+.origins__media img {
   border: 1rem solid #e6e6e6;
   object-fit: cover;
   height: 100%;
 }
 
 
-.origins__textbox {
-  padding: 0 2rem 1rem 2rem;
-  flex: 1;
-}
-
-.origins__button {
-  display: block;
-  background-color: red;
-  color: white;
-  width: 150px;
-  text-align: center;
-  padding: 8px 8px 8px 8px;
-
-}
-
-.origins__button:hover {
-  background-color: black;
-  color: red;
-}
-
-
-.earlycareer__layer {
+.earlycareer__layer--bg {
   background-image: url(img/free-throw-line-dunk.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-
+  padding: 0 0 3rem 0;
 }
 
 .earlycareer__container {
   width: 960px;
-  padding-top: 50px;
-  padding-left: 75px;
-
+  padding-top: 100px;
+  margin: 0 auto;
 }
 
 .earlycareer__heading {
@@ -199,140 +237,148 @@ img {
 
 .earlycareer__column {
   display: flex;
+  width: 50%;
 
 }
 
 .earlycareer__textbox {
   width: 50%;
   background-color: white;
-  padding: 20px 20px 20px 20px;
+  padding: 1rem 2rem;
   font-family: roboto slab;
 }
 
-.earlycareer__button {
-  display: block;
-  background-color: red;
-  color: white;
-  width: 150px;
-  text-align: center;
-  padding: 8px 8px 8px 8px;
+.champs3__layer {
 
 }
 
-.earlycareer__button:hover {
+.champs3__container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.champs3__banner {
+
+}
+
+.champs3__banner img {
+  border: 1rem solid #e6e6e6;
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+}
+
+.whitesox__layer {
+  border: 1px solid black;
+}
+
+.whitesox__media {
+  flex: 1;
+}
+
+.whitesox__media img {
+  border: 1rem solid #e6e6e6;
+  object-fit: cover;
+}
+
+.champs6__layer--bg-fixed {
   background-color: black;
-  color: red;
+  background-image: url(img/second-threepeat-shot.jpg);
+  //background-attachment: fixed;
+  padding-bottom: 24rem;
+}
+
+.champs6__layer {
+  background-color: black;
+}
+
+.champs6__container {
 
 }
 
+.champs6__heading {
+  font-family: Impact;
+  font-size: 2.6rem;
+  color: white;
+}
 
+.champs6__columns {
 
+}
 
+.champs6__textbox {
+  color: white;
+}
 
+.champs6__button:hover {
+  background-color: white;
+}
 
+.wiz__layer {
 
+}
 
+.wiz__media {
+  flex: 1;
+}
 
+.wiz__media img {
+  border: 1rem solid #e6e6e6;
+  object-fit: cover;
+}
 
+.trophies__layer--bg {
+  background-image: url(img/michael-jordan-trophies.jpg);
+  padding-bottom: 40rem;
 
+}
 
+.trophies__layer {
+  background-color: black;
+}
 
+.trophies__container {
 
-// @import 'normalize'
-//
-// debug()
-//   *
-//     border 1px solid magenta
-//
-// debug()
-//
-// //colors
-// blackout = #000
-// bullsred = #f00
-// fog = #e6e6e6
-// //
-//
-// //font
-// slab = 'roboto slab'
-// condensed = 'roboto condensed'
-// heavy = 'impact'
-//
-// //Resets
-// ul, ol {
-//   padding: 0;
-//   margin: 0;
-// }
-//
-// a {
-//   text-decoration: none;
-// }
-//
-// * {
-//   box-sizing: border-box;
-// }
-//
-// :root {
-//   font-size: 20px;
-// }
-//
-// body {
-//   background-color: white;
-//   line-height: 1.5
-// }
-//
-// //Header layer
-// .header {
-//   background-color: bullsred;
-//   }
-//
-// .header__container {
-//     align-items: center;
-//     display: flex;
-//     height: 200px;
-//     margin: 0 auto;
-//     width: 960px;
-//   }
-//
-// .header__logo {
-//   fill: white;
-// }
-//
-// .header__logo svg {
-//   width: 100px;
-// }
-//
-// .header__slogan {
-//   color: white;
-//   font-family: heavy;
-//   font-size: 1.45rem;
-//   margin-left: 20px;
-//   text-shadow: 3px 3px 0 blackout;
-//   text-transform: uppercase;
-// }
-//
-// //.nav {}
-//
-// .nav__container {
-//   margin: 0 auto;
-//   width: 960px;
-// }
-//
-// //ul
-// .nav__items {
-//   display: flex;
-//   justify-content: space-between;
-//   list-style: none;
-// }
-//
-// .nav__link {
-//   color: bullsred;
-//   display: block;
-//   font-family: condensed;
-//   font-size: 1.25rem;
-//   padding: .5rem;
-// }
-//
-// .nav__link:hover {
-//   background-color: bullsred;
-//   color: white;
-// }
+}
+
+.trophies__heading {
+
+}
+
+.trophies__textbox {
+  color: white;
+}
+
+.trophies__button:hover {
+  background-color: white;
+}
+
+.jumpman__layer{
+
+}
+
+.jumpman__container {
+
+}
+
+.jumpman__container svg {
+  width: 100%;
+  height: 50%;
+}
+
+.jumpman__button {
+  margin-left: 400px;
+  margin-bottom: 100px;
+}
+
+.footer__layer {
+  background-color: black;
+}
+
+.footer__container{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  align-items: center;
+}
