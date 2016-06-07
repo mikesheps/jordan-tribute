@@ -27,7 +27,7 @@ a {
 }
 
 img {
-  max-width: 100%
+  max-width: 100%;
 }
 
 ul, ol {
@@ -39,6 +39,42 @@ p {
   margin-bottom: 1rem;
 }
 
+
+//Pattern Selectors
+[class*='__container'] {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+[class*='__heading'] {
+  font-family: Impact;
+  font-size: 2.6rem;
+  padding: 2rem 0;
+}
+
+[class*='__columns'] {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+[class*='__textbox'] {
+  flex: 1;
+  padding: 2rem;
+}
+
+[class*='__button'] {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 8px;
+}
+
+[class*='__button']:hover {
+  background-color: black;
+  color: red;
+}
 
 .header {
   background-color: red;
@@ -126,4 +162,19 @@ p {
   font-size: 2.5rem;
   padding: 12px 0;
   line-height: 3.5rem;
+}
+
+.origins__layer {
+
+}
+
+.origins__media {
+  flex: 1;
+  padding: 2rem;
+}
+
+.origins__media img {
+  border: 1rem solid #e6e6e6;
+  height: 100%;
+  object-fit: cover;
 }
