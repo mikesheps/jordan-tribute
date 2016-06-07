@@ -1,3 +1,5 @@
+@import 'normalize'
+
 slab = 'roboto slab'
 condensed = 'roboto condensed'
 heavy = 'impact'
@@ -13,10 +15,30 @@ heavy = 'impact'
   font-size: 20px;
 }
 
+body {
+  font-family: 'roboto slab';
+  line-height: 1.5;
+}
+
+
 //Resets
 a {
   text-decoration: none;
 }
+
+img {
+  max-width: 100%
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
 
 .header {
   background-color: red;
@@ -77,4 +99,31 @@ a {
 .nav__link:hover {
   background-color: red;
   color: white;
+}
+
+.feature__layer {
+  background-image: url(img/wings.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 560px;
+}
+
+.feature__quote {
+  max-width: 700px;
+  text-align: center;
+  transform: translateY(9rem);
+}
+
+.feature__highlight {
+  background-color: white;
+  box-shadow: 24px 0 0 0 white, -24px 0 0 0 white;
+  display: inline;
+  font-family: Impact;
+  font-size: 2.5rem;
+  padding: 12px 0;
+  line-height: 3.5rem;
 }
